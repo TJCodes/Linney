@@ -1,118 +1,178 @@
 import Image from "next/image";
 import { Inter } from "next/font/google";
+import backups from "public/static/Backups.png"
+import ddosProtection from "public/static/DDOS_Protection.png"
+import edgeNetwork from "public/static/Edge_Network.png"
+import security from "public/static/Security.png"
+import edgeNetworkMap from "public/static/Edge_Network_Map.png"
+import backgroundWaves from "public/static/Background_Waves.png"
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
     <main
-      className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}
+      className={`${inter.className}`}
     >
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/pages/index.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+      <section className="p-6">
+        <div className="flex justify-center items-center w-full pb-6">
+          <div className="w-[525px]">
+            <h2>Cloud computing Developers trust</h2>
+            <h4>Build, run, and secure your cloud workloads on <strong>SuperNet Connected Cloud,</strong> a massively distributed edge and cloud platform. <a href="#" className="link">Sign up</a> today or <a className="link" href="#">contact us</a> to learn more.</h4>
+          </div>
+
+          <div className="w-[502px] p-[64px] bg-[#313131] flex flex-col justify-center items-center rounded-lg">
+            <button className="btn btn-primary w-[360px] mb-6">Sign up with Google</button>
+            <button className="btn btn-secondary w-[360px] mb-6">Github</button>
+            <button className="btn btn-secondary w-[360px] mb-6">Email</button>
+            <p className="w-[378px] text-center">By providing your email address or using a single sign-on provider to create an account, you agree to our <a className="link">Terms of Service</a> and that you have reviewed our <a className="link">Privacy Policy</a> and <a className="link">Cookie Policy.</a></p>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700/10 after:dark:from-sky-900 after:dark:via-[#0141ff]/40 before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      <section className="justify-center items-center w-full pb-6 pt-12 px-12">
+        <div className="items-center justify-center m-auto w-[607px] text-center pb-12">
+          <h2 className="mb-6">Features</h2>
+          <h4>From edge locations world wide, to unparalleled security and DDOS protection, we've got you covered.</h4>
+        </div>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+        <div className="grid gap-12 grid-cols-2">
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+          <div className="flex">
+            <div className="text-center">
+              <h3>Edge Network</h3>
+              <p>Discover our industry leading edge network, with over 300 edge nodes scattered around the globe.</p>
+              <p>Give your customers the best performance in every corner of the world.</p>
+            </div>
+            <div>
+              <figure className="overlay">
+                <Image src={edgeNetwork} alt="Edge Network" />
+              </figure>
+            </div>
+          </div>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Discover and deploy boilerplate example Next.js&nbsp;projects.
-          </p>
-        </a>
+          <div className="flex">
+            <div className="text-center">
+              <h3>Security</h3>
+              <p>Stay safe from threats without slowing down.</p>
+              <p>SuperNet surrounds and protects your entire ecosystem — clouds, apps, APIs, and users.</p>
+            </div>
+            <div>
+              <figure className="overlay">
+                <Image src={security} alt="Edge Network" />
+              </figure>
+            </div>
+          </div>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+          <div className="grid grid-cols-5">
+            <div className="text-center col-span-3">
+              <h3 className="mb-2">DDOS Protection</h3>
+              <p className="mb-1">Highly rated web, application & network DDoS protection.</p>
+              <p>Keeping bots and malicious users at bay.</p>
+            </div>
+            <div className="col-span-2">
+              <figure className="overlay">
+                <Image src={ddosProtection}alt="Edge Network" />
+              </figure>
+            </div>
+          </div>
+
+          <div className="flex">
+            <div className="text-center">
+              <h3>Backups</h3>
+              <p>Fully managed automatic daily, weekly, and biweekly backups of your Compute Instances.</p>
+              <p>Have peace of mind knowing that your data is always safe.</p>
+            </div>
+            <div>
+              <figure className="overlay">
+                <Image src={backups} alt="Edge Network" />
+              </figure>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section className="justify-center items-center w-full pb-6 pt-12 px-12">
+        <div className="items-center justify-center m-auto w-[834px] text-center pb-12">
+          <h2 className="mb-6">Edge Network</h2>
+          <h4>Scale your business on the most distributed compute, security, and delivery platform — from cloud to edge. New core compute regions launched. <a className="link" href="#">Learn more.</a></h4>
+        </div>
+
+        <div className="w-full h-auto">
+          <Image src={edgeNetworkMap} alt="Edge Network Map" />
+        </div>
+      </section>
+
+      <section className="items-center justify-center">
+        <div className="items-center justify-center m-auto w-[784px] text-center pb-12">
+          <h2 className="mb-6">Pricing</h2>
+          <h4>Cut your cloud bills in half with bundled extras like DDoS Protection, cloud firewalls, and generous transfer.</h4>
+        </div>
+
+        <div className="grid gap-x-16 grid-cols-3 w-[66%] m-auto">
+          <div className="bg-[#313131]">
+            <p className="price standard">$9/mo<br />Standard</p>
+          </div>
+          <div className="bg-[#313131]">
+            <p className="price professional">$49/mo<br />Professional</p>
+          </div>
+          <div className="bg-[#313131]">
+            <p className="price enterprise">$159/mo<br />Enterprise</p>
+          </div>
+
+          <div className="h-fit">
+            <Image 
+              src={backgroundWaves} 
+              width={0} 
+              height={0} 
+              alt="Waves" 
+              sizes="100vw" 
+              style={{ width: '100%', height: 'auto' }} 
+            /> 
+          </div>
+          <div className="h-fit">
+          <Image 
+              src={backgroundWaves} 
+              width={0} 
+              height={0} 
+              alt="Waves" 
+              sizes="100vw" 
+              style={{ width: '100%', height: 'auto' }} 
+            />
+          </div>
+          <div className="h-fit">
+          <Image 
+              src={backgroundWaves} 
+              width={0} 
+              height={0} 
+              alt="Waves" 
+              sizes="100vw" 
+              style={{ width: '100%', height: 'auto' }} 
+            />
+          </div>
+
+          <div className="planSpecsWrapper">
+            <p>10GB Of space</p><br />
+            <p>Unlimited traffic</p><br />
+            <p>Forum Access</p><br />
+            <p>Support at $25/hour</p><br />
+          </div>
+          <div className="planSpecsWrapper">
+            <p>10GB Of space</p><br />
+            <p>Unlimited traffic</p><br />
+            <p>Forum Access</p><br />
+            <p>Support at $25/hour</p><br />
+          </div>
+          <div className="planSpecsWrapper">
+            <p>10GB Of space</p><br />
+            <p>Unlimited traffic</p><br />
+            <p>Forum Access</p><br />
+            <p>Support at $25/hour</p><br />
+          </div>
+
+        </div>
+      </section>
     </main>
   );
 }

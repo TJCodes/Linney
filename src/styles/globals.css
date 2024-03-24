@@ -3,9 +3,12 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
+  --background-colour: #292929;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+
+  --green-primary: #02B159;
+  --black-secondary-btn: #242424;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,17 +20,95 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: var(--background-colour);
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #DFDFDF;
+}
+
+p {
+  color: #FFF;
+  font-size: 14px;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.link {
+   color: var(--green-primary);
+   text-decoration: underline;
+}
+
+.btn {
+  color: #FEFEFE;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  padding: 16px 2px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.btn-primary {
+  background-color: var(--green-primary);
+}
+
+.btn-secondary {
+  background-color: var(--black-secondary-btn);
+}
+
+/* .overlay::before {
+  content: '';
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 50%);
+} */
+
+.price {
+  padding: 64px;
+  
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.standard {
+  background: linear-gradient(90deg, #FF9B9B -20.37%, #FB3434 113.89%);
+  background-clip: text;
+}
+
+.professional {
+  background: linear-gradient(90deg, #ACFFAF -3.4%, #43FE4A 100.34%);
+  background-clip: text;
+}
+
+.enterprise {
+  background: linear-gradient(90deg, #ACCCFC -10.4%, #5F9FFF 100.4%);
+  background-clip: text;
+}
+
+
+
+.planSpecsWrapper {
+  background-color: #242424;
+  text-align: center;
 }
